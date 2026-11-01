@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="علبة كبريت مطبخي كبيرة">
+  <rect width="400" height="400" fill="#EEF2F6"/>
+  <ellipse cx="200" cy="326" rx="112" ry="15" fill="#0F2B46" opacity="0.08"/>
+  <rect x="128" y="96" width="144" height="46" rx="8" fill="#C9B68C"/>
+  <g stroke="#3B2A1A" stroke-width="8" stroke-linecap="round">
+    <line x1="152" y1="128" x2="142" y2="58"/>
+    <line x1="176" y1="126" x2="172" y2="50"/>
+    <line x1="200" y1="126" x2="202" y2="46"/>
+    <line x1="224" y1="126" x2="232" y2="52"/>
+    <line x1="248" y1="128" x2="260" y2="62"/>
+  </g>
+  <g fill="#C0392B">
+    <circle cx="142" cy="56" r="9"/>
+    <circle cx="172" cy="48" r="9"/>
+    <circle cx="202" cy="44" r="9"/>
+    <circle cx="232" cy="50" r="9"/>
+    <circle cx="260" cy="60" r="9"/>
+  </g>
+  <rect x="120" y="136" width="160" height="182" rx="12" fill="#1F5C99"/>
+  <rect x="120" y="136" width="160" height="34" rx="12" fill="#18497B"/>
+  <rect x="146" y="196" width="108" height="86" rx="8" fill="#F3F7FB"/>
+  <g fill="#1F5C99" opacity="0.7">
+    <rect x="162" y="216" width="76" height="8" rx="4"/>
+    <rect x="162" y="238" width="56" height="8" rx="4"/>
+    <rect x="162" y="260" width="66" height="8" rx="4"/>
+  </g>
+</svg>

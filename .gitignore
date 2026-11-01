@@ -1,0 +1,32 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# مفاتيح البيئة ما تدخلش مستودع عام: الرمز يتكتب عند التنصيب على استضافة النت
+.env
+.env.*
+!.env.example
+
+# صورة ملتقطة في الجذر، مش جزء من المتجر (أصلها يبقى عند التاجر)
+/71dbda1b-4f56-4cfd-b144-29447e6901e4.png

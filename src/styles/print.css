@@ -1,0 +1,136 @@
+/* أنماط الطباعة: تُخفى عناصر الواجهة المحيطة بالفاتورة ولا يُطبع الورق نفسه */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .site-footer,
+  .splash,
+  .drawer,
+  .drawer__overlay,
+  .toast,
+  .skip-link,
+  .no-print {
+    display: none !important;
+  }
+
+  .app-shell {
+    display: block;
+    min-block-size: 0;
+  }
+
+  .app-main {
+    padding-block: 0;
+  }
+
+  .app-main .container {
+    max-inline-size: none;
+    padding-inline: 0;
+  }
+
+  .invoice-sheet {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .invoice-table-scroll,
+  .table-scroll--pick {
+    /* الورق يأخذ الجدول كاملًا دايماً: بلا حالة البطاقة الخاصة بالشاشات الضيقة */
+    container-name: none;
+    container-type: normal;
+    overflow: visible;
+  }
+
+  .invoice-table-scroll {
+    overflow: visible;
+  }
+
+  .invoice-table {
+    min-inline-size: 0;
+  }
+
+  .invoice-table th {
+    background: #eef2f6 !important;
+    color: #000 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .invoice-table tfoot td {
+    background: #f2f7fc !important;
+    color: #000 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .invoice-table tr,
+  .invoice-parties > div,
+  .invoice-foot {
+    break-inside: avoid;
+  }
+
+  .pick-sheet {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .pick-table {
+    min-inline-size: 0;
+    font-size: 10.5pt;
+  }
+
+  .pick-table thead th {
+    background: #eef2f6 !important;
+    color: #000 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .pick-table tbody tr.is-picked th,
+  .pick-table tbody tr.is-picked td {
+    background: #f2f7fc !important;
+    color: #000 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .pick-blank {
+    background: #fff !important;
+    border-inline-start: 1px solid #9aa7b4;
+  }
+
+  .pick-progress {
+    background: #fff;
+    border: 1px solid #9aa7b4;
+    color: #000;
+  }
+
+  .pick-check {
+    inline-size: 14px;
+    block-size: 14px;
+  }
+
+  .pick-table tr,
+  .pick-head,
+  .pick-foot {
+    break-inside: avoid;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

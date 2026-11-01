@@ -1,0 +1,28 @@
+{
+  "name": "الدلتا — تجارة وتوزيع الخردوات والمنتجات الاستهلاكية",
+  "short_name": "الدلتا",
+  "description": "متجر الدلتا من مركز الزرقا بدمياط: بخور وولاعات وكبريت وفحم ومستلزمات منزلية — جملة وقطاعي.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "ar",
+  "dir": "rtl",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0b2440",
+  "background_color": "#f5f7fa",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "238x238",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

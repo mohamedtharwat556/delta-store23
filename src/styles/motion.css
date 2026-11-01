@@ -1,0 +1,273 @@
+/* ---------- motion ----------
+   حركة قصيرة عند الظهور وعند التفاعل. تُبطَل كاملة مع prefers-reduced-motion. */
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes dot-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(194, 65, 12, 0.34);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(194, 65, 12, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(194, 65, 12, 0);
+  }
+}
+
+@keyframes line-grow {
+  from {
+    transform: scaleY(0.2);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes row-flash {
+  from {
+    background-color: var(--blue-50);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+/* الظهور المتدرّج للأصناف والأقسام والأسطر */
+.grid--products .product-card,
+.grid--categories .category-tile,
+.cart-lines .cart-line,
+.tracking-results__list > li {
+  animation: rise-in 380ms var(--ease) both;
+  animation-delay: min(calc(var(--i, 0) * 45ms), 420ms);
+}
+
+/* البطاقات ترتفع قليلًا عند المرور */
+.product-card,
+.category-tile,
+.kpi {
+  transition: border-color var(--speed) var(--ease), box-shadow var(--speed) var(--ease),
+    translate var(--speed) var(--ease);
+}
+
+.product-card:hover {
+  border-color: var(--navy-600);
+  box-shadow: var(--shadow-md);
+  translate: 0 -3px;
+}
+
+.product-card:hover .product-card__media img {
+  scale: 1.05;
+}
+
+.product-card__media img {
+  transition: scale calc(var(--speed) * 2.5) var(--ease), opacity var(--speed) var(--ease);
+}
+
+/* أزرار وشيبس الاستجابة للفور */
+.btn:active,
+.chip:active,
+.filter-option:active,
+.qty__btn:active {
+  scale: 0.97;
+}
+
+.btn,
+.chip,
+.filter-option,
+.qty__btn {
+  transition: background-color var(--speed) var(--ease), border-color var(--speed) var(--ease),
+    color var(--speed) var(--ease), scale 90ms var(--ease);
+}
+
+/* بطاقات المؤشرات في لوحة التحكم */
+.kpi-grid .kpi {
+  animation: rise-in 340ms var(--ease) both;
+}
+
+.kpi-grid .kpi:nth-child(2) {
+  animation-delay: 60ms;
+}
+
+.kpi-grid .kpi:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+.kpi-grid .kpi:nth-child(4) {
+  animation-delay: 180ms;
+}
+
+.kpi-grid .kpi:nth-child(5) {
+  animation-delay: 240ms;
+}
+
+/* السعر يتغيّر عند بلوغ حد الجملة أو العرض */
+.price__value {
+  animation: pop-in 220ms var(--ease) both;
+}
+
+/* مسار تتبع الطلب: المراحل تظهر بالترتيب، والنقطة الجارية تنبض */
+.timeline__step {
+  animation: rise-in 340ms var(--ease) both;
+  animation-delay: min(calc(var(--i, 0) * 90ms), 460ms);
+}
+
+.timeline__step.is-reached::before {
+  transform-origin: top;
+  animation: line-grow 460ms var(--ease) both;
+  animation-delay: min(calc(var(--i, 0) * 90ms + 120ms), 580ms);
+}
+
+.timeline__step.is-current .timeline__dot {
+  animation: dot-pulse 2s var(--ease) 1;
+}
+
+/* صف الطلب يومض بعد تغيير حالته (بدون both حتى ترجع الألوان العادية بعدها) */
+.dashboard-table tbody tr {
+  animation: row-flash 700ms var(--ease);
+}
+
+/* السلة الجانبية والملخص */
+.cart-summary {
+  animation: rise-in 380ms var(--ease) both;
+}
+
+/* تبويبات لوحة التحكم ولوحاتها */
+.dash-tab {
+  transition: border-color var(--speed) var(--ease), background-color var(--speed) var(--ease),
+    color var(--speed) var(--ease), translate var(--speed) var(--ease);
+}
+
+.dash-tab:active {
+  translate: 0 1px;
+}
+
+.dash-tab__count {
+  transition: background-color var(--speed) var(--ease), color var(--speed) var(--ease);
+}
+
+.dash-panel {
+  animation: rise-in 260ms var(--ease) both;
+}
+
+.dash-alert,
+.dash-image-option {
+  transition: border-color var(--speed) var(--ease), background-color var(--speed) var(--ease);
+}
+
+.dash-bars__fill {
+  transition: inline-size 420ms var(--ease);
+}
+
+/* شاشة الترحيب: البلاطة تستقرّ، ثم الجملة، فالفاصل المذهّب، ثم سطر الشركة */
+@keyframes splash-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes splash-settle {
+  0% {
+    opacity: 0;
+    transform: translateY(-18px) scale(0.86);
+  }
+  62% {
+    opacity: 1;
+    transform: translateY(0) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes splash-wipe {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes splash-sheen {
+  from {
+    background-position: 160% 0;
+  }
+  to {
+    background-position: -60% 0;
+  }
+}
+
+.splash::before {
+  animation: splash-in 700ms 260ms var(--ease) both;
+}
+
+.splash::after {
+  animation: splash-in 700ms 460ms var(--ease) both;
+}
+
+.splash__tile {
+  animation: splash-settle 720ms var(--ease) both;
+}
+
+.splash__tagline {
+  animation: splash-in 620ms 300ms var(--ease) both;
+}
+
+.splash__ornament {
+  transform-origin: center;
+  animation: splash-wipe 620ms 520ms var(--ease) both;
+}
+
+.splash__company {
+  animation: splash-in 560ms 700ms var(--ease) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .product-card:hover,
+  .category-tile:hover {
+    translate: none;
+  }
+
+  .product-card:hover .product-card__media img,
+  .category-tile:hover .category-tile__media .product-image img {
+    scale: none;
+  }
+}

@@ -1,0 +1,68 @@
+:root {
+  --navy-900: #0b2440;
+  --navy-800: #0e2f52;
+  --navy-700: #123a63;
+  --navy-600: #1b4e80;
+
+  /* أزرق غامق أعمق وأغنى من الكحلي — خلفية شاشة الافتتاح فقط */
+  --deep-blue-950: #041230;
+  --deep-blue-900: #071e4a;
+  --deep-blue-800: #0d2f6d;
+  --blue-100: #e6eef6;
+  --blue-50: #f2f7fc;
+
+  --paper: #ffffff;
+  --grey-50: #f5f7fa;
+  --grey-100: #edf1f5;
+  --grey-200: #e2e8ef;
+  --line: #d8e0e8;
+  --line-strong: #b9c6d4;
+
+  --ink: #14202e;
+  --ink-soft: #33465c;
+  --muted: #5c6b7d;
+
+  --offer: #c2410c;
+  --offer-soft: #fdf1e7;
+  --success: #146c43;
+  --success-soft: #e8f5ee;
+  --danger: #b3261e;
+  --danger-soft: #fdeceb;
+  --warning: #8a5a00;
+  --warning-soft: #fdf6e3;
+
+  /* ذهبي معتَّم — للقطات العلامة على الخلفية الكحلية فقط، لا للنصوص الطويلة */
+  --gold-500: #a8811f;
+  --gold-400: #c9a227;
+  --gold-300: #e3c877;
+
+  --font-family: 'Cairo', 'Tajawal', 'Noto Sans Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
+  --font-mono: 'Consolas', 'Courier New', monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --shadow-sm: 0 1px 2px rgba(11, 36, 64, 0.06);
+  --shadow-md: 0 8px 24px rgba(11, 36, 64, 0.1);
+  --shadow-lg: 0 18px 48px rgba(11, 36, 64, 0.18);
+
+  --container-max: 1200px;
+  --header-topline: 36px;
+  --header-bar: 76px;
+  /* بيتقاس من الهيدر نفسه في useStickyHeaderOffset، والرقم ده مجرد بداية قبل أول قياس */
+  --header-h: 112px;
+
+  --ease: cubic-bezier(0.2, 0.6, 0.3, 1);
+  --speed: 160ms;
+}

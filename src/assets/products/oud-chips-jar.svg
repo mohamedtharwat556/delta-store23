@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="قطع عود هندي">
+  <rect width="400" height="400" fill="#EEF2F6"/>
+  <ellipse cx="200" cy="330" rx="112" ry="16" fill="#0F2B46" opacity="0.08"/>
+  <rect x="138" y="150" width="124" height="26" rx="8" fill="#9AA7B4"/>
+  <path d="M132 176 h136 v112 a24 24 0 0 1 -24 24 h-88 a24 24 0 0 1 -24 -24 z" fill="#DCE6EE" opacity="0.9"/>
+  <path d="M132 176 h136 v34 h-136 z" fill="#CFDCE7"/>
+  <g fill="#4A3220">
+    <rect x="150" y="222" width="46" height="18" rx="6" transform="rotate(-8 173 231)"/>
+    <rect x="198" y="238" width="52" height="18" rx="6" transform="rotate(6 224 247)"/>
+    <rect x="158" y="262" width="50" height="18" rx="6" transform="rotate(4 183 271)"/>
+    <rect x="212" y="278" width="40" height="16" rx="6" transform="rotate(-6 232 286)"/>
+    <rect x="164" y="288" width="40" height="14" rx="6"/>
+  </g>
+  <g fill="#5C3E27">
+    <rect x="272" y="300" width="58" height="20" rx="7" transform="rotate(-12 301 310)"/>
+    <rect x="96" y="292" width="52" height="18" rx="7" transform="rotate(10 122 301)"/>
+  </g>
+  <path d="M152 196 q10 -10 24 -2" stroke="#F2F7FB" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.8"/>
+</svg>

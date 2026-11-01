@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="معطر سيارة معلّق">
+  <rect width="400" height="400" fill="#EEF2F6"/>
+  <ellipse cx="200" cy="336" rx="88" ry="13" fill="#0F2B46" opacity="0.08"/>
+  <path d="M200 108 q-8 22 4 34" stroke="#123A63" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="104" r="12" fill="none" stroke="#123A63" stroke-width="7"/>
+  <path d="M200 138 q62 40 62 96 a62 62 0 0 1 -124 0 q0 -56 62 -96 z" fill="#2E7D4F"/>
+  <path d="M200 138 q62 40 62 96 a62 62 0 0 1 -124 0 q0 -56 62 -96 z" fill="none" stroke="#22603C" stroke-width="4"/>
+  <path d="M200 168 q44 30 44 68 a44 44 0 0 1 -88 0 q0 -38 44 -68 z" fill="#EAF2F9" opacity="0.9"/>
+  <g fill="#22603C" opacity="0.75">
+    <rect x="182" y="212" width="36" height="8" rx="4"/>
+    <rect x="188" y="232" width="24" height="8" rx="4"/>
+  </g>
+  <g stroke="#C8A44A" stroke-width="5" opacity="0.6" fill="none">
+    <path d="M150 300 q-16 22 -6 36"/>
+    <path d="M250 300 q16 22 6 36"/>
+  </g>
+</svg>

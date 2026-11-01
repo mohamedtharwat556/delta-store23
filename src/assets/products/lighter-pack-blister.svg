@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="ربطة ولاعات جيب أربعة قطع">
+  <rect width="400" height="400" fill="#EEF2F6"/>
+  <ellipse cx="200" cy="336" rx="120" ry="16" fill="#0F2B46" opacity="0.08"/>
+  <rect x="98" y="96" width="204" height="228" rx="14" fill="#C3CCD6"/>
+  <rect x="98" y="96" width="204" height="40" rx="14" fill="#AEB9C5"/>
+  <rect x="122" y="110" width="156" height="14" rx="7" fill="#F2F6FA"/>
+  <g>
+    <rect x="126" y="158" width="66" height="146" rx="12" fill="#C0392B"/>
+    <rect x="126" y="158" width="66" height="26" rx="12" fill="#A83024"/>
+    <rect x="146" y="140" width="26" height="22" rx="6" fill="#8C96A2"/>
+    <rect x="208" y="158" width="66" height="146" rx="12" fill="#1F5C99"/>
+    <rect x="208" y="158" width="66" height="26" rx="12" fill="#184C80"/>
+    <rect x="228" y="140" width="26" height="22" rx="6" fill="#8C96A2"/>
+    <rect x="126" y="196" width="66" height="8" rx="4" fill="#FFFFFF" opacity="0.35"/>
+    <rect x="208" y="196" width="66" height="8" rx="4" fill="#FFFFFF" opacity="0.35"/>
+  </g>
+  <g>
+    <rect x="126" y="238" width="66" height="66" rx="12" fill="#E8EDF2"/>
+    <rect x="208" y="238" width="66" height="66" rx="12" fill="#E5A83A"/>
+  </g>
+  <path d="M98 96 h204 v228 h-204 z" fill="none" stroke="#B4BFCA" stroke-width="3"/>
+  <path d="M236 60 q14 -18 34 -8" stroke="#9AA7B4" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

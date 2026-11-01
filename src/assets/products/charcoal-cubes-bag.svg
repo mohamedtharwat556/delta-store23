@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="كيس فحم معسل مكعبات">
+  <rect width="400" height="400" fill="#EEF2F6"/>
+  <ellipse cx="200" cy="330" rx="122" ry="16" fill="#0F2B46" opacity="0.08"/>
+  <path d="M126 108 h148 v188 a20 20 0 0 1 -20 20 h-108 a20 20 0 0 1 -20 -20 z" fill="#20262C"/>
+  <path d="M126 108 h148 v28 h-148 z" fill="#31383F"/>
+  <rect x="150" y="60" width="100" height="52" rx="10" fill="#2A3138"/>
+  <rect x="160" y="170" width="80" height="70" rx="8" fill="#E9EEF2"/>
+  <g fill="#20262C" opacity="0.8">
+    <rect x="172" y="186" width="56" height="8" rx="4"/>
+    <rect x="172" y="206" width="40" height="8" rx="4"/>
+    <rect x="172" y="222" width="48" height="8" rx="4"/>
+  </g>
+  <g fill="#3A424A" stroke="#1B2126" stroke-width="3">
+    <path d="M286 268 l26 -14 l26 14 v28 l-26 14 l-26 -14 z"/>
+    <path d="M258 300 l26 -14 l26 14 v28 l-26 14 l-26 -14 z"/>
+  </g>
+  <path d="M140 150 h16" stroke="#F0A63C" stroke-width="8" stroke-linecap="round"/>
+</svg>

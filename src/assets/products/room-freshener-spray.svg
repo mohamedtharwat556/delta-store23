@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="علبة رذاذ معطر جو">
+  <rect width="400" height="400" fill="#EEF2F6"/>
+  <ellipse cx="200" cy="332" rx="92" ry="14" fill="#0F2B46" opacity="0.08"/>
+  <rect x="164" y="86" width="72" height="30" rx="10" fill="#1F5C99"/>
+  <rect x="188" y="116" width="24" height="18" fill="#9AA7B4"/>
+  <path d="M150 134 h100 v176 a24 24 0 0 1 -24 24 h-52 a24 24 0 0 1 -24 -24 z" fill="#E7EDF3"/>
+  <path d="M150 134 h100 v176 a24 24 0 0 1 -24 24 h-52 a24 24 0 0 1 -24 -24 z" fill="none" stroke="#B9C6D3" stroke-width="4"/>
+  <path d="M150 196 h100 v52 h-100 z" fill="#1F5C99"/>
+  <g fill="#EAF2F9">
+    <rect x="166" y="210" width="68" height="8" rx="4"/>
+    <rect x="176" y="228" width="48" height="8" rx="4" opacity="0.8"/>
+  </g>
+  <g fill="#9AA7B4" opacity="0.5">
+    <circle cx="262" cy="96" r="6"/>
+    <circle cx="282" cy="112" r="5"/>
+    <circle cx="272" cy="72" r="4"/>
+    <circle cx="296" cy="90" r="3.5"/>
+  </g>
+  <path d="M160 150 q8 -10 20 -6" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
+</svg>
