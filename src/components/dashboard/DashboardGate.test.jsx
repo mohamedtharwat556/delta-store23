@@ -1,6 +1,10 @@
 import { act, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { UNLOCK_FLAG, readUnlockFlag } from '../../utils/dashboardAccess.js'
+import {
+  DEFAULT_DASHBOARD_KEY,
+  UNLOCK_FLAG,
+  readUnlockFlag,
+} from '../../utils/dashboardAccess.js'
 
 // المفتاح يُقرأ وقت تحميل الوحدة، فلازم يتظبط قبل الاستيراد
 async function loadGate() {
@@ -57,6 +61,25 @@ describe('بوابة /dashboard في نسخة الإنتاج', () => {
     expect(sessionStorage.getItem(UNLOCK_FLAG)).toBe('1')
     // الرمز نفسه ما ينزلش في أي مخزن
     expect(localStorage.length).toBe(0)
+  })
+
+  it('بناء بلا متغيّر بيئة يستخدم الرمز المضمَّن، والغلط مرفوض', async () => {
+    vi.stubEnv('PROD', true)
+    const Gate = await loadGate()
+
+    render(
+      <Gate>
+        <p>اللوحة مفتوحة</p>
+      </Gate>
+    )
+
+    expect(screen.getByRole('heading').textContent).toContain('لوحة الدلتا للتاجر')
+    tryKey('admin124')
+    expect(screen.getByRole('alert').textContent).toContain('الرمز مش صحيح')
+
+    tryKey(` ${DEFAULT_DASHBOARD_KEY} `)
+    expect(screen.getByText('اللوحة مفتوحة')).toBeTruthy()
+    expect(sessionStorage.getItem(UNLOCK_FLAG)).toBe('1')
   })
 
   it('الرمز الفاضي ما يحوّرش رسالة خطأ', async () => {

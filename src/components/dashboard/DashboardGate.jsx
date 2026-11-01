@@ -1,8 +1,13 @@
 import { useState } from 'react'
 import { Lock, ShieldAlert } from 'lucide-react'
-import { dashboardAccess, readUnlockFlag, setUnlockFlag } from '../../utils/dashboardAccess.js'
+import {
+  DEFAULT_DASHBOARD_KEY,
+  dashboardAccess,
+  readUnlockFlag,
+  setUnlockFlag,
+} from '../../utils/dashboardAccess.js'
 
-const DASHBOARD_KEY = import.meta.env.VITE_DASHBOARD_KEY ?? ''
+const DASHBOARD_KEY = (import.meta.env.VITE_DASHBOARD_KEY ?? DEFAULT_DASHBOARD_KEY).trim()
 
 export default function DashboardGate({ children }) {
   const [typed, setTyped] = useState('')
@@ -66,7 +71,7 @@ export default function DashboardGate({ children }) {
             setTyped(event.target.value)
             if (denied) setDenied(false)
           }}
-          placeholder='الرمز اللي ضبطته عند النشر'
+          placeholder='اكتب رمز الدخول'
           autoComplete='off'
           aria-describedby={denied ? 'dashboard-key-error' : undefined}
         />
